@@ -1,25 +1,56 @@
-# Section Connection  
-A new social tool that college students can use to connect with other students that are taking the same
-course but may reside in a different section with a different teacher. This tool helps students connect 
-with one another and allows for multiple professor's teachings to reach students that would never have
-had the opportunity to be taught their way.
+# Section Connection
 
-# Installation  
-The project is built with react, and postgresSQL.  
-npm install - must be run in the terminal to initialize the project  
-npm start - will launch the javascript into a local browser window
+**AI-assisted messaging platform for college students taking the same course in different sections.**  
+This tool helps students share ideas, compare different teaching styles, and improve overall comprehension through peer collaboration.
 
-From there the functionality of the website will be accessible. The user will be able to enter their
-name and then access the different course chats that are available.
+Section Connection features a **clean, responsive React-based chat interface**, a PostgreSQL backend for persistent messaging, and an AI chatbot for additional support when peers cannot answer questions.
 
-To utilize the postgres database one must import the dump.sql file into their postgres to initialize the
-proper tables that the application uses from it. Once the tables and database are properly initialized
-the chat messages are saved to the database and students are able to communicate with each other and have
-their messages saved.
 
-# My contribution
-This was a group project that was worked on with 3 other people. My role in the project was creating the 
-react front end display, creating the database structure, and connecting the front and back end.
-Through completing this project I learned new skills in javascript, css, and postgresSQL. It was 
-a great opportunity for me to learn by doing and after its completion I have the skills to build other 
-full stack applications.
+## Features
+
+- **Real-time messaging**: Users can join course-specific chatrooms and communicate with peers across sections.  
+- **AI-assisted responses**: Integrated AI chatbot provides help for questions that peers cannot answer.  
+- **Database-backed persistence**: PostgreSQL stores user data and chat messages, ensuring continuity of conversations.  
+- **Modular front-end components**: React components such as `MessageList`, `MessageItem`, and `MessageInput` provide maintainable, reusable code.  
+- **API connectivity**: Frontend communicates with backend through a simple, extensible API workflow.  
+- **Agile Scrum methodology**: Development followed sprints, with **daily stand-up meetings**, **user stories** to guide progress.
+- **Version control**: GitHub used for collaborative coding and feature tracking.
+
+## Installation
+
+1. Install dependencies and start the front-end:
+
+   npm install
+   npm start
+   
+  This launches the app in a local browser window.
+
+2. Set up the PostgreSQL database:
+
+  Import dump.sql to initialize tables:
+
+    psql -U <username> -d <database_name> -f dump.sql
+    
+  Once initialized, chat messages will be saved and accessible across sessions.
+
+## My Contribution
+
+Designed and implemented the React front-end interface, including modular and reusable components for messaging.
+
+Built the PostgreSQL database structure and integrated backend connectivity to store and retrieve messages and user data.
+
+Connected frontend and backend via API endpoints to enable seamless real-time messaging and AI interaction.
+
+Led implementation of features using Agile Scrum methodology: worked with user stories, participated in daily stand-ups, and completed tasks iteratively within structured sprints.
+
+Gained hands-on experience with JavaScript, React, CSS, PostgreSQL, and full-stack development practices, preparing for future scalable applications.
+
+## Project Goals
+
+Facilitate student collaboration across course sections and teaching styles.
+
+Integrate AI assistance to provide automated support when peer knowledge is insufficient.
+
+Demonstrate full-stack development best practices, Agile methodology, and user-story-driven implementation.
+
+Build a scalable foundation for future enhancements and deployment.
